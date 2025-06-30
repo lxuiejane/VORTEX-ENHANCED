@@ -17,5 +17,5 @@
 /* src/styles/fonts.css */
 @font-face {
   font-family: 'Anime';
-  src: url('./assets/font/animeace2_reg.otf') format('otf');
+  src: url('./assets/font/animeace2_reg.otf') format('opentype');
 }
