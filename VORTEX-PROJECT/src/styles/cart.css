@@ -1,0 +1,187 @@
+.cart__container {
+    padding-top: 4.5rem;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.shopping__overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* (3.2) PRODUCT DISPLAY. */
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 80.5vh;
+    margin-bottom: 85px;
+    overflow: scroll;
+}
+
+.product__card {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 15px 15px;
+    width: 40vw;
+}
+
+.product__information {
+    margin: 10px 0px 0px 20px;
+}
+
+.product__information h2,
+h3,
+h4 {
+    font-weight: 100;
+}
+
+.product__card img {
+    height: 7rem;
+    box-shadow: -7px 7px 0px white;
+}
+
+.cart__container {
+    padding-top: 4.5rem;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.shopping__overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* (3.2) PRODUCT DISPLAY. */
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 80.5vh;
+    margin-bottom: 85px;
+    overflow: scroll;
+}
+
+.product__card {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 15px 15px;
+    width: 40vw;
+}
+
+.product__information {
+    margin: 10px 0px 0px 20px;
+}
+
+.product__information h2,
+h3,
+h4 {
+    font-weight: 100;
+}
+
+.product__card img {
+    height: 7rem;
+    box-shadow: -7px 7px 0px white;
+}
+
+/* (3.3) ORDER OVERVIEW. */
+.product__overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    height: 79vh;
+    background-color: #F6F6F6;
+    margin: 10px;
+}
+
+.title__overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title__overview h2 {
+    position: absolute;
+    top: 23vh;
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-top: 1.5rem;
+}
+
+.title__overview .line {
+    position: absolute;
+    top: 30vh;
+    left: 53vw;
+    width: 80px;
+}
+
+.title__overview .line__two {
+    position: absolute;
+    top: 30vh;
+    left: 81.5vw;
+    width: 80px;
+}
+
+.card__information {
+    margin-left: 1rem;
+    position: absolute;
+    top: 40vh;
+}
+
+.buyer__information {
+    background-color: #EBEBEB;
+    margin: 10px 30px;
+    padding: 10px 20px;
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+.buyer__information p {
+    font-family: Bebas;
+    font-size: 30px;
+}
+
+.submit__button {
+    position: absolute;
+    top: 90vh;
+    left: 53vw;
+    background-color: #000000;
+    padding: 10px 20px;
+    width: 35vw;
+    letter-spacing: 3px;
+}
+
+.submit__button p {
+    text-align: center;
+    font-family: Bebas;
+    font-size: 30px;
+    color: white;
+}
+
+.price p {
+    position: absolute;
+    left: 79vw;
+    bottom: 36vh;
+    width: 100%;
+    font-family: Bebas;
+    font-size: 30px
+}
+
+.line3 {
+    width: 23vw;
+    height: 0px;
+    left: 53.3vw;
+    top: 75vh;
+    position: absolute;
+    border: 1px black solid;
+}

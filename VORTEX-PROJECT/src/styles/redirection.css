@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+nav img {
+    height: 2em;
+    margin-left: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.firstNav img {
+    margin-top: 10px;
+    height: 150px;
+}
+
+.cartEffect {
+    position: relative;
+    max-width: 100%;
+}
+
+.cartEffect img.cartHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.cartEffect:hover img.cartHover {
+    opacity: 1;
+}
