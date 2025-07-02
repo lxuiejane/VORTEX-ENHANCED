@@ -1,0 +1,174 @@
+
+
+
+.homepage__banner-container {
+width: 100vw;
+background: url("../assets/images/mngui.png");
+background-size: cover;
+height: 30vh;
+}
+
+
+
+
+.homepage__banner:hover {
+  transform: scale(1.03);
+}
+
+/* Titel onder banner, in stijl van profile user title */
+.homepage__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid black;
+  letter-spacing: 1.5px;
+  color: #000;
+  margin-top: 1rem;
+}
+
+/* Intro tekst */
+.homepage__text {
+  font-family: 'Bebas', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 1.5px;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* Kleine aanpassing voor responsive */
+@media (max-width: 600px) {
+  .homepage__content {
+    width: 90vw;
+  }
+}
+
+.text{
+    position: relative;
+    top: 23rem;
+}
+
+.new-releases{
+    position: relative;
+    top: 4rem;
+    font-size: 3rem;
+    max-width: 300px;
+    left: 6rem;
+    border-bottom: 4px solid black;
+
+}
+
+.img-css1 {
+  position: relative;
+  top: 7rem;
+  height: 15vh;
+}
+
+.img-css1:hover {
+  transform: scale(1.3);
+}
+
+.img-css2 {
+  position: relative;
+  top: 7rem;
+  height: 15vh;
+}
+
+.img-css2:hover {
+  transform: scale(1.3);
+}
+
+.img-css3 {
+  position: relative;
+  top: 7rem;
+  height: 15vh;
+}
+
+.img-css3:hover {
+  transform: scale(1.3);
+}
+
+.img-css4 {
+  position: relative;
+  top: 7rem;
+  height: 15vh;
+}
+
+.img-css4:hover {
+  transform: scale(1.3);
+}
+
+.img-css5 {
+  position: relative;
+  top: 7rem;
+  height: 15vh;
+}
+
+.img-css5:hover {
+  transform: scale(1.3);
+}
+.manga-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.manga-item-box {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.manga-item-box:hover {
+  transform: scale(1.1);
+}
+
+.manga-img {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.heart {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.favorited .manga-img {
+  border: 4px solid crimson;
+}
+
+.manga-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.manga-item-box {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.manga-item-box:hover {
+  transform: scale(1.05);
+}
+
+.manga-img {
+  height: 200px;
+  border-radius: 8px;
+}
+
+.heart {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 0.5rem;
+}
