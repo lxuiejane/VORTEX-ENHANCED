@@ -1,183 +1,187 @@
-html, body {
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
+* {
+    font-family: Poppins;
+    box-sizing: border-box;
+    /* Helps with consistent sizing */
 }
 
-.cart__container {
-  padding-top: 7rem;
-  height: 100vh;
-  width: 100%;
-  background-color: white;
+h1 {
+    font-size: 3rem;
+    margin: 10vh 0 0 2rem;
+    border-bottom: 1px solid black;
+    width: 27vw;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    border-bottom: none;
+    margin: 0;
+    /* remove default margin */
+}
+
+h3 {
+    font-size: 0.7rem;
+    margin: 0.5rem 0;
+    /* keep vertical spacing */
 }
 
 /* === Shopping Overview === */
 .shopping__overview {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
 }
 
 /* === Product Display === */
 .cards {
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-  height: 80.5vh;
-  margin: 1.5rem 0 85px 0;
-  overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 60vh;
+    overflow: scroll;
+    padding: 0;
+    /* remove any default padding */
 }
 
 .product__card {
-  position: relative; /* Belangrijk voor absolute positionering */
-  display: flex;
-  flex-direction: row;
-  width: 40vw;
-  margin-top: 10px;
-  padding: 10px 10px 15px 15px;
-  background-color: #F6F6F6;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 22vh;
+    padding: 1.5rem 0;
+    margin-bottom: 0.5rem;
+    background-color: #F6F6F6;
 }
 
 .product__card img {
-  height: 7rem;
-  box-shadow: -7px 7px 0px white;
+    height: 7rem;
+    box-shadow: -7px 7px 0px white;
 }
 
 .product__information {
-  margin: 10px 0 0 20px;
-  flex-grow: 1;
-}
-
-.product__information h2,
-.product__information h3,
-.product__information h4 {
-  font-weight: 100;
-  margin: 0.2rem 0;
+    margin: 10px 0 0 20px;
+    flex-grow: 1;
 }
 
 .remove-button {
-  background: transparent;
-  border: none;
-  color: #888;
-  font-size: 1.2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 8px;
-  right: 8px; /* Rechtsboven */
-  transition: color 0.2s ease;
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    transition: color 0.2s ease;
 }
 
 .remove-button:hover {
-  color: #e00;
+    color: rgb(0, 0, 0);
 }
 
 .price {
-  position: absolute;
-  bottom: 10px; /* Rechtsonder */
-  right: 10px;
-  font-weight: 600;
-  font-size: 18px;
-  color: #333;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #333;
 }
 
 /* === Order Overview === */
 .product__overview {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 40vw;
-  height: 79vh;
-  margin: 10px;
-  background-color: #F6F6F6;
-  padding-top: 0.5rem;
-  position: static;
-  top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 20vw;
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+    margin: 0;
+    /* remove any margin */
+}
+
+.product__overview h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0;
 }
 
 .title__overview {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.title__overview h2 {
-  position: absolute;
-  top: 23vh;
-  margin-top: 1.5rem;
-  font-size: 30px;
-  font-weight: 100;
-  letter-spacing: 4px;
-}
-
-.title__overview .line {
-  position: absolute;
-  top: 30vh;
-  left: 53vw;
-  width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    /* remove margin */
 }
 
 .title__overview .line__two {
-  position: absolute;
-  top: 30vh;
-  left: 81.5vw;
-  width: 80px;
+    position: absolute;
+    top: 30vh;
+    left: 81.5vw;
+    width: 80px;
 }
 
 .card__information {
-  position: static;
-  margin-left: 1rem;
-  font-size: 16px;
-  margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    /* keep bottom margin for spacing */
 }
 
 .buyer__information {
-  width: 36vw;
-  margin: 0px 10px 10px 10px;
-  padding: 10px 20px;
-  letter-spacing: 3px;
-  background-color: #EBEBEB;
+    width: 36vw;
+    margin: 0.5rem 0;
+    padding: 10px 20px;
+    background-color: #ebebeb;
 }
 
-.buyer__information p {
-  font-family: Bebas;
-  font-size: 30px;
+.priceTotal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    /* use flex-end instead of end */
+    margin: 1rem 0;
+}
+
+.priceTotal p {
+    font-weight: 600;
+}
+
+.divider {
+    background-color: #000;
+    height: 0.01rem;
+    width: 10vw;
 }
 
 .submit__button {
-  position: absolute;
-  top: 80vh;
-  left: 53vw;
-  width: 35vw;
-  padding: 10px 20px;
-  letter-spacing: 3px;
-  background-color: #000;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000;
+    margin: 0;
+    /* remove any margin */
 }
 
 .submit__button p {
-  font-family: Bebas;
-  font-size: 30px;
-  color: white;
-  text-align: center;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin: 0;
 }
 
-.price p {
-  position: absolute;
-  bottom: 34vh;
-  left: 79vw;
-  width: 100%;
-  font-family: Bebas;
-  font-size: 30px;
-}
 
-.line3 {
-  position: absolute;
-  top: 64.5vh;
-  left: 53.3vw;
-  width: 23vw;
-  height: 0;
-  border: 1px solid black;
-}
+@media (max-width: 600px) {
+    .shopping__overview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
 
-.card__information p {
-  font-size: 16px;
+    }
 }
