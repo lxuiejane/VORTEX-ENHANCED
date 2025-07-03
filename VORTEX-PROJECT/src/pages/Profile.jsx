@@ -20,7 +20,8 @@ const Profile = () => {
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("favorites")) || [];
-    setFavorites(stored);
+    const validFavorites = stored.filter((id) => allMangas[id]); // filter foute ID's
+    setFavorites(validFavorites);
   }, []);
 
   return (
@@ -33,6 +34,7 @@ const Profile = () => {
           ) : (
             favorites.map((id) => {
               const manga = allMangas[id];
+              if (!manga) return null; // veiligheid
               return (
                 <div key={id} className="manga-item-box">
                   <img src={manga.src} alt={manga.title} className="manga-img" />

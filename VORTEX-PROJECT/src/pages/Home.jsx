@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import "../styles/home.css";
 
 import manga1 from "../assets/images/kaiju.png";
@@ -18,7 +17,6 @@ const mangas = [
 
 const Home = () => {
   const [favorites, setFavorites] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -36,18 +34,14 @@ const Home = () => {
     setFavorites(updatedFavorites);
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
 
-    if (!favorites.includes(id)) {
-      navigate("/profile");
-    }
+    // 👉 Geen redirect meer naar /profile
   };
 
   return (
     <main className="profile__container">
       <section className="homepage__banner-container"></section>
 
-      <section className="homepage__welcome text">
-
-      </section>
+      <section className="homepage__welcome text"></section>
 
       <section className="new-releases">
         <h2>New Releases</h2>
@@ -61,7 +55,9 @@ const Home = () => {
             onClick={() => toggleFavorite(manga.id)}
           >
             <img src={manga.src} alt={manga.title} className="manga-img" />
-            <span className="heart">{favorites.includes(manga.id) ? "❤️" : "🤍"}</span>
+            <span className="heart">
+              {favorites.includes(manga.id) ? "❤️" : "🤍"}
+            </span>
           </div>
         ))}
       </section>
